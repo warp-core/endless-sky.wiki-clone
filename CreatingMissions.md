@@ -442,7 +442,7 @@ Conditions can be changed when you are offered a mission or when you accept, dec
 
 A mission will not be offered if any of the `to fail` conditions are met, and will fail if it is active and one of those conditions changes so that it is satisfied. Using the `random` keyword in a `to fail` tag is possible, but not recommended.
 
-Beginning in **v. 0.10.0**, mission can be given `to accept` conditions. For jobs, if the mission can offer then it will appear on the jobs board, but if it can't be accepted then it will appear grayed out with the "accept mission" button unable to be clicked. For non-job missions, if the mission's `to offer` conditions passed but the `to accept` conditions do not, then the `blocked` dialog will appear, if it exists.
+Beginning in **v. 0.10.0**, missions can be given `to accept` conditions. For jobs, if the mission can offer then it will appear on the jobs board, but if it can't be accepted then it will appear grayed out with the "accept mission" button unable to be clicked. For non-job missions, if the mission's `to offer` conditions passed but the `to accept` conditions do not, then the `blocked` dialog will appear, if it exists.
 
 The condition set is satisfied only if every condition listed is true. If instead you want it to succeed if any of the listed conditions are true (e.g. you have completed mission A *or* mission B), you can use an `or` sub-clause. Within an `or` clause you can have `and` clauses (and so on), allowing you to check any arbitrary logical combination. For example, if you want a mission to be offered if "(has A or (has B and has C)) and (has D)":
 
